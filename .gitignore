@@ -1,0 +1,106 @@
+# ==============================================================================
+# Build & Output Directories
+# ==============================================================================
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+cmake-build-*/
+
+# ==============================================================================
+# Compiled Object & Binary Files (Build artifacts)
+# ==============================================================================
+*.o
+*.obj
+*.d
+*.su
+*.elf
+*.hex
+*.bin
+*.srec
+*.map
+*.axf
+*.lst
+*.list
+
+# Ensure precompiled CMSIS DSP libraries are tracked
+!Drivers/CMSIS/Lib/**
+
+# ==============================================================================
+# CMake Artifacts
+# ==============================================================================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+.ninja_deps
+.ninja_log
+compile_commands.json
+
+# ==============================================================================
+# STM32CubeMX / CubeIDE Artifacts
+# ==============================================================================
+mx.scratch
+*.launch
+.metadata/
+
+# Preserve STM32 VS Code extension store/bundles configuration
+!.settings/
+
+# ==============================================================================
+# IAR Embedded Workbench (EWARM) Artifacts
+# ==============================================================================
+EWARM/settings/
+EWARM/Debug/
+EWARM/Release/
+EWARM/*.dep
+EWARM/*.dnx
+EWARM/*.ewt
+*.custom_argvars
+
+# ==============================================================================
+# Keil MDK-ARM Artifacts
+# ==============================================================================
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.uvoptx
+MDK-ARM/*.uvgui.*
+MDK-ARM/*.uvopt
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/Listings/
+MDK-ARM/Objects/
+
+# ==============================================================================
+# Clangd / Language Server Cache
+# ==============================================================================
+.cache/
+.clangd/
+
+# ==============================================================================
+# IDE & Editor Specific Files
+# ==============================================================================
+.idea/
+.vs/
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+
+# VS Code - keep essential project configurations, ignore local workspace logs/caches
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/c_cpp_properties.json
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
